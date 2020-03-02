@@ -11,4 +11,4 @@ jobs:
     - name: run-pmd
       run: pwd
     - name: run ls
-      run: cls /github/home
+      run: ls /github/home
