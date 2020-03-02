@@ -9,4 +9,6 @@ jobs:
     #put whatever linting solution we decide on here
     - uses: sfdx-actions/setup-pmd@v1
     - name: run-pmd
-      run: echo $PATH
+      run: echo pwd
+    - name: run ls
+	  run:  echo ls
