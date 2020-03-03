@@ -6,10 +6,9 @@ jobs:
     name: Backend Lint
     runs-on: ubuntu-latest
     steps: 
-	-name: checkout
-     uses: actions/checkout@v2
+    #put whatever linting solution we decide on here
     - uses: sfdx-actions/setup-pmd@v1
-    - name: run-pwd
+    - name: run-pmd
       run: pwd
     - name: run ls
       run: ls $HOME/pmd
