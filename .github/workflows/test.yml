@@ -2,13 +2,13 @@
 on: [push,pull_request]
 
 jobs: 
-  backend_lint:
+  test:
     name: Backend Lint
     runs-on: ubuntu-latest
     steps: 
-	- name: checkout
+    - name: checkout
       uses: actions/checkout@v2
-	- name: ceckout 
+    - name: ceckout 
       uses: sfdx-actions/setup-pmd@v1
     - name: run-pwd
       run: pwd
