@@ -6,7 +6,7 @@ jobs:
     name: Backend Lint
     runs-on: ubuntu-latest
     steps: 
-	-name: checkout
+	- name: checkout
      uses: actions/checkout@v2
     - uses: sfdx-actions/setup-pmd@v1
     - name: run-pwd
