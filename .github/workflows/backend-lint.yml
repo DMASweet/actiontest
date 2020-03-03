@@ -1,0 +1,16 @@
+#Triggered by pushed to repository
+on: [push,pull_request]
+
+jobs: 
+  backend_lint:
+    name: Backend Lint
+    runs-on: ubuntu-latest
+    steps: 
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: ceckout 
+      uses: sfdx-actions/setup-pmd@v1
+    - name: run-pwd
+      run: pwd
+    - name: run ls
+      run: ls 
